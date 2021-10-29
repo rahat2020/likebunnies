@@ -8,12 +8,15 @@ import chat from '../../../../img/chat.svg';
 import group from '../../../../img/group.svg';
 import menu from '../../../../img/menu.svg';
 import rahat from '../../../../img/rahat.png';
+import logo from '../../../../img/logo.svg';
 export default function TopNav() {
     return (
 
         <Navbar id={style.navBg} expand="lg">
             <Container>
-                <Navbar.Brand href="#">LikeBunnies</Navbar.Brand>
+                <Navbar.Brand href="#">
+                    <img src={logo} className={style.logo} alt="" />
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav

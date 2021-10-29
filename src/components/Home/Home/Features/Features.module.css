@@ -1,0 +1,113 @@
+.FeaturesBG{
+    background-color: #eeeff0d7;
+}
+#navBg{
+    background-image: linear-gradient(to right,#b054fc, #fa7ddf);
+    border-radius:1rem;
+}
+.logo{
+    width:33%;
+    height:20%;
+   border-radius: 100%;
+}
+/* col right */
+#upVideo{
+    margin-right: 0.25em;
+}
+#gallery{
+    margin-left: 0.25em;
+}
+.userPhoto{
+    width: 20%;
+    height: 20%;
+    border-radius: 100%;
+
+}
+.userName{
+    font-size: 1em;
+    margin-left: 0.25em;
+}
+.sponsored{
+    font-size: 0.70em;
+    display: block;
+}
+.caption{
+    font-size: 0.85em;
+}
+/* list icons styles */
+.home{
+    color: #fa7ddf;
+    font-weight: 500;
+}
+#home{
+    color: #fa7ddf;
+    margin-right: 0.25em;
+}
+.live{
+    font-size: 0.95em;
+    font-weight: 500;
+    color: #000000bd;
+}
+#video{
+    color: #fa7ddf;
+    margin-right: 0.25em;
+}
+.match{
+    font-size: 0.95em;
+    font-weight: 500;
+    color: #000000bd;
+}
+#matches{
+    color: #fa7ddf;
+    margin-right: 0.25em;
+}
+.hot{
+    font-size: 0.95em;
+    font-weight: 500;
+    color: #000000bd;
+}
+#hot{
+    color: #fa7ddf;
+    margin-right: 0.25em;
+}
+.event{
+    font-size: 0.95em;
+    font-weight: 500;
+    color: #000000bd;
+}
+.event{
+    font-size: 0.95em;
+    font-weight: 500;
+    color: #000000bd;
+}
+#events{
+    color: #fa7ddf;
+    margin-right: 0.25em;
+}
+.chatroom{
+    font-size: 0.95em;
+    font-weight: 500;
+    color: #000000bd;
+}
+#chat{
+    color: #fa7ddf;
+    margin-right: 0.25em;
+}
+.group{
+    font-size: 0.95em;
+    font-weight: 500;
+    color: #000000bd;
+}
+#groups{
+    color: #fa7ddf;
+    margin-right: 0.25em;
+}
+.blog{
+    font-size: 0.95em;
+    font-weight: 500;
+    color: #000000bd;
+}
+#blogs{
+    color: #fa7ddf;
+    margin-right: 0.25em;
+}
