@@ -11,8 +11,8 @@ export default function Story() {
         <section className="" id={style.story}>
             <div className="container">
                 <div className="row">
-                    <div className="col-3 mt-3">
-                        <Card style={{ borderRadius: '1rem', border: 'none' }}>
+                    <div className="col-3 mt-3 mb-4">
+                        <Card style={{ borderRadius: '1rem', border: 'none', height:'9.4rem' }}>
                             <div className={style.storyImg}>
                                 <Card.Img variant="top" src={alisa} id={style.cardImg} />
                             </div>
@@ -30,9 +30,9 @@ export default function Story() {
                     </div>
 
                     {/* story */}
-                    <div className="col-md-7 d-flex justify-content-around align-items-center mt-3">
+                    <div className="col-md-7 d-flex justify-content-around align-items-center mt-3" style={{ height: '9.4rem',}}>
                         {/* <div className="col mt-3"> */}
-                        <Card style={{ marginLeft: '1rem', width: '20rem', height: '100%', borderRadius: '1rem', border: 'none' }}>
+                        <Card className={style.cardHover} style={{  width: '20rem', borderRadius: '1rem', border: 'none', height:'100%', cursor: 'pointer'}}>
                             <div className={style.createStory}>
                                 <Card.Img className="w-100 h-100" variant="top" src={alisa} id={style.createStoryImg} />
                             </div>
@@ -48,7 +48,7 @@ export default function Story() {
                         {/* two */}
 
                         {/* <div className="col mt-3"> */}
-                        <Card style={{ marginLeft: '1rem', width: '20rem', height: '100%', borderRadius: '2rem', border: 'none' }}>
+                        <Card style={{ marginLeft: '1rem', width: '20rem', height: '100%', borderRadius: '2rem', border: 'none', cursor: 'pointer'}}>
                             <div className={style.createStory}>
                                 <Card.Img
                                     className="w-100 h-100"
@@ -66,7 +66,7 @@ export default function Story() {
 
                         {/* three */}
                         {/* <div className="col mt-3"> */}
-                        <Card style={{ marginLeft: '1rem', width: '20rem', height: '100%', borderRadius: '2rem', border: 'none' }}>
+                        <Card style={{ marginLeft: '1rem', width: '20rem', height: '100%', borderRadius: '2rem', border: 'none' ,cursor: 'pointer' }}>
                             <div className={style.createStory}>
                                 <Card.Img
                                     className="w-100 h-100"
@@ -80,7 +80,7 @@ export default function Story() {
                                 <span className={style.personProfileText}>alisha</span>
                             </div>
                         </Card>
-                        <Card style={{ marginLeft: '1rem', width: '20rem', height: '100%', borderRadius: '2rem', border: 'none' }}>
+                        <Card style={{ marginLeft: '1rem', width: '20rem', height: '100%', borderRadius: '2rem', border: 'none', cursor: 'pointer' }}>
                             <div className={style.createStory}>
                                 <Card.Img
                                     className="w-100 h-100"
@@ -94,7 +94,7 @@ export default function Story() {
                                 <span className={style.personProfileText}>alisha</span>
                             </div>
                         </Card>
-                        <Card style={{ marginLeft: '1rem', width: '20rem', height: '100%', borderRadius: '2rem', border: 'none' }}>
+                        <Card style={{ marginLeft: '1rem', width: '20rem', height: '100%', borderRadius: '2rem', border: 'none', cursor: 'pointer' }}>
                             <div className={style.createStory}>
                                 <Card.Img
                                     className="w-100 h-100"
@@ -108,7 +108,7 @@ export default function Story() {
                                 <span className={style.personProfileText}>alisha</span>
                             </div>
                         </Card>
-                        <Card style={{ marginLeft: '1rem', width: '20rem', height: '100%', borderRadius: '2rem', border: 'none' }}>
+                        <Card style={{ marginLeft: '1rem', width: '20rem', height: '100%', borderRadius: '2rem', border: 'none', cursor: 'pointer' }}>
                             <div className={style.createStory}>
                                 <Card.Img
                                     className="w-100 h-100"
@@ -125,7 +125,7 @@ export default function Story() {
                     </div>
 
                     <div className="col-md-2 mt-3">
-                        <Card id={style.colRight} style={{ width: '10rem', height: '125%', borderRadius: '1rem', border: 'none' }}>
+                        <Card id={style.colRight} style={{ width: '10rem', height: '125%', borderRadius: '1rem', border: 'none', cursor: 'pointer' }}>
                             <div className="d-flex justify-content-center align-items-center">
                                 <FontAwesomeIcon className={style.crowns} icon={faCrown} />
                             </div>
