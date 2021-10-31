@@ -2,10 +2,16 @@ import React from 'react';
 import { Card, Container, Form, FormControl, ListGroup, Nav, Navbar, Button } from 'react-bootstrap';
 import style from './Features.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAlignJustify, faCalendarDay, faComment, faHome, faImages, faUsers, faVideo, } from '@fortawesome/free-solid-svg-icons';
+import { faAlignJustify, faCalendarDay, faChevronDown, faComment, faHome, faImages, faUsers, faVideo, } from '@fortawesome/free-solid-svg-icons';
 import { faBlogger, faGratipay, faGripfire, } from '@fortawesome/free-brands-svg-icons';
 import alisa from '../../../../img/alisa.png';
 import postOne from '../../../../img/postOne.jpg';
+import groupOne from '../../../../img/groupOne.jpg';
+import groupTwo from '../../../../img/groupTwo.jpg';
+import groupThree from '../../../../img/groupThree.jpg';
+import groupFour from '../../../../img/groupFour.jpg';
+import groupFive from '../../../../img/groupFive.jpg';
+import rahat from '../../../../img/rahat.png';
 import shoe from '../../../../img/shoe.jpg';
 
 export default function Features() {
@@ -25,14 +31,15 @@ export default function Features() {
                             <ListGroup.Item style={{ border: '0px' }}>  <FontAwesomeIcon id={style.blogs} className={style.icons} icon={faBlogger} /> <span className={style.blog}>Blogs</span></ListGroup.Item>
                         </ListGroup>
                         <ListGroup className="mt-2" style={{ borderRadius: '1rem' }}>
-                            <ListGroup.Item style={{ border: '0px' }}> Subscriptions</ListGroup.Item>
-                            <ListGroup.Item style={{ border: '0px' }}> <FontAwesomeIcon id={style.carrot} className={style.icons} icon={faVideo} /> Live</ListGroup.Item>
-                            <ListGroup.Item style={{ border: '0px' }}> <FontAwesomeIcon id={style.carrot} className={style.icons} icon={faGratipay} /> Matches</ListGroup.Item>
-                            <ListGroup.Item style={{ border: '0px' }}> <FontAwesomeIcon id={style.carrot} className={style.icons} icon={faGripfire} /> Hot or Not</ListGroup.Item>
-                            <ListGroup.Item style={{ border: '0px' }}> <FontAwesomeIcon id={style.carrot} className={style.icons} icon={faComment} /> Chatroms</ListGroup.Item>
-                            <ListGroup.Item style={{ border: '0px' }}> <FontAwesomeIcon id={style.carrot} className={style.icons} icon={faCalendarDay} /> Events</ListGroup.Item>
-                            <ListGroup.Item style={{ border: '0px' }}> <FontAwesomeIcon id={style.carrot} className={style.icons} icon={faUsers} /> Groups</ListGroup.Item>
-                            <ListGroup.Item style={{ border: '0px' }}> <FontAwesomeIcon id={style.carrot} className={style.icons} icon={faBlogger} /> Blogs</ListGroup.Item>
+                            <ListGroup.Item style={{ border: '0px' }}> <span className={style.colGroup}>Subscriptions</span></ListGroup.Item>
+                            <ListGroup.Item style={{ border: '0px' }}> <img src={alisa} className={style.colRightImg} alt="" /><span className={style.colLeftText}>Alisa</span> <span className={style.colActive}></span></ListGroup.Item>
+                            <ListGroup.Item style={{ border: '0px' }}> <img src={alisa} className={style.colRightImg} alt="" /><span className={style.colLeftText}>Alex Roy</span> <span className={style.colActive}></span></ListGroup.Item>
+                            <ListGroup.Item style={{ border: '0px' }}> <img src={alisa} className={style.colRightImg} alt="" /><span className={style.colLeftText}>Jonny Bairstow</span> <span className={style.colActive}></span></ListGroup.Item>
+                            <ListGroup.Item style={{ border: '0px' }}> <img src={alisa} className={style.colRightImg} alt="" /><span className={style.colLeftText}>Alisa</span> <span className={style.colActive}></span></ListGroup.Item>
+                            <ListGroup.Item style={{ border: '0px' }}> <img src={alisa} className={style.colRightImg} alt="" /><span className={style.colLeftText}>Alisa</span> <span className={style.colActive}></span></ListGroup.Item>
+                            <ListGroup.Item style={{ border: '0px' }}> <img src={alisa} className={style.colRightImg} alt="" /><span className={style.colLeftText}>Alisa</span> <span className={style.colActive}></span></ListGroup.Item>
+                            <ListGroup.Item style={{ border: '0px' }}> <img src={alisa} className={style.colRightImg} alt="" /><span className={style.colLeftText}>Alisa</span> <span className={style.colActive}></span></ListGroup.Item>
+                            <ListGroup.Item style={{ border: '0px' }}><span className={style.show}>Show 23 more</span> <FontAwesomeIcon id={style.down} icon={faChevronDown}/> </ListGroup.Item>
                         </ListGroup>
                     </div>
                     <div className="col-md-7">
@@ -94,8 +101,8 @@ export default function Features() {
                             </Card.Body>
                         </Card>
                     </div>
-                    <div className="col-md-2 mt-5 pt-1">
-                        <Card style={{borderRadius:'1rem'}}>
+                    <div className="col-md-2 mt-5 pt-1 mb-2">
+                        <Card style={{ borderRadius: '1rem' }}>
                             <div className="d-flex justify-content-center align-items-center mt-2">
                                 <FontAwesomeIcon id={style.cardHot} className={style.icons} icon={faGripfire} />
                                 <span className={style.not}>Hot or Not</span>
@@ -104,16 +111,32 @@ export default function Features() {
                                 </div>
                             </div>
                             <Card.Body>
-                                <Card.Img variant="top" src={shoe} style={{borderRadius: '0.80rem', backgroundImage:'linear-gradient(to bottom, #000000bd, #fa7ddf'}} className={style.image}/>
+                                <Card.Img
+                                    variant="top" src={shoe}
+                                    style={{ borderRadius: '0.80rem', backgroundImage: 'linear-gradient(to bottom, #000000bd, #fa7ddf' }}
+                                    className={style.image}
+                                    id={style.colRight} />
                                 <div className={style.textandIcon}>
                                     <span className={style.name}>Alice Adams</span>
                                 </div>
                                 <div className={style.text}>
                                     <FontAwesomeIcon id={style.cardHot} className={style.icons} icon={faGripfire} />
-                                    <span>Click to play</span>
                                 </div>
+                                <span className={style.cardClick}>Click to play</span>
                             </Card.Body>
                         </Card>
+
+                        <ListGroup className="mt-2" style={{ borderRadius: '1rem', cursor: 'pointer' }}>
+                            <ListGroup.Item style={{ border: '0px' }}> <FontAwesomeIcon id={style.group} icon={faUsers}/><span className={style.colGroup}>My Groups</span></ListGroup.Item>
+                            <ListGroup.Item style={{ border: '0px' }}> <img src={groupOne} className={style.colRightImg} alt="" /><span className={style.colRightText}>Jayden Talks</span></ListGroup.Item>
+                            <ListGroup.Item style={{ border: '0px' }}> <img src={groupTwo} className={style.colRightImg} alt="" /><span className={style.colRightText}>Love with brain</span></ListGroup.Item>
+                            <ListGroup.Item style={{ border: '0px' }}> <img src={groupThree} className={style.colRightImg} alt="" /><span className={style.colRightText}>Briggs Tips</span></ListGroup.Item>
+                            <ListGroup.Item style={{ border: '0px' }}> <img src={groupFour} className={style.colRightImg} alt="" /><span className={style.colRightText}>Aiden Group</span></ListGroup.Item>
+                            <ListGroup.Item style={{ border: '0px' }}> <img src={groupFive} className={style.colRightImg} alt="" /><span className={style.colRightText}>Campbell</span></ListGroup.Item>
+                            <ListGroup.Item style={{ border: '0px' }}> <img src={rahat} className={style.colRightImg} alt="" /><span className={style.colRightText}>House of love</span></ListGroup.Item>
+                            <ListGroup.Item style={{ border: '0px' }}> <img src={alisa} className={style.colRightImg} alt="" /><span className={style.colRightText}>Patriot</span></ListGroup.Item>
+                            <ListGroup.Item style={{ border: '0px' }}><span className={style.show}>Show 8 more</span> <FontAwesomeIcon id={style.down} icon={faChevronDown}/> </ListGroup.Item>
+                        </ListGroup>
                     </div>
                 </div>
             </div>

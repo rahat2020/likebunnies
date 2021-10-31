@@ -109,6 +109,10 @@
     border-radius: 100%;
     margin-top: 5.4rem;
 }
+.cardHover{
+    transition:all 0.5s;
+}
+
 
 .plus{
     font-weight: 300;

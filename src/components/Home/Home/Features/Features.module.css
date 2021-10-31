@@ -1,5 +1,5 @@
 .FeaturesBG{
-    background-color: #eeeff0d7;
+    background-color: #eeeff0e0;
 }
 #navBg{
     background-image: linear-gradient(to right,#b054fc, #fa7ddf);
@@ -178,4 +178,78 @@
     background-image: linear-gradient(to bottom, #000000bd, #fa7ddf);
     background-position:center;
     background-size: cover;
+}
+.text{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fa7ddf;
+    border-radius: 1rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7em;
+    margin-top: -1rem;
+    margin-left: 3.2rem;
+}
+/* col left */
+.colLeftText{
+    font-size: 0.95em;
+    margin-left: 0.45em;
+}
+.colActive{
+    width: 5px;
+    height:5px;
+    background: green;
+}
+/* col right */
+#colRight{
+    transition: all 0.5s ease;
+}
+#colRight:hover{
+    transform: scale(1.1);
+}
+.cardHot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardClick{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.80em;
+    margin-top: 0.40em;
+    color: #fa7ddf;
+    font-weight: 500;
+}
+.colRightImg{
+    width:2rem;
+    height:2rem;
+    border-radius: 1rem;
+}
+#group{
+    color: #fa7ddf;
+    font-size: 1.3rem;
+}
+.colRightText{
+    margin-left: 0.45em;
+    color: #000000d7;
+    font-size: 00.85em;
+    font-weight: 500;
+}
+.colGroup{
+    margin-left: 0.45em;
+    font-weight: 500;
+}
+#down{
+    font-size: 0.65em;
+    color: #272727d7;
+    font-weight: 500;
+}
+.show{
+    font-size: 0.85em;
+    color: #272727d7;
+    font-weight: 500;
 }

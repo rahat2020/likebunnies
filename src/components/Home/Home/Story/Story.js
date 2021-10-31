@@ -11,7 +11,7 @@ export default function Story() {
         <section className="" id={style.story}>
             <div className="container">
                 <div className="row">
-                    <div className="col-3 mt-3 mb-4">
+                    <div className="col-3 mt-3">
                         <Card style={{ borderRadius: '1rem', border: 'none', height:'9.4rem' }}>
                             <div className={style.storyImg}>
                                 <Card.Img variant="top" src={alisa} id={style.cardImg} />
