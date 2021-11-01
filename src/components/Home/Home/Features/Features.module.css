@@ -207,8 +207,8 @@
     font-weight: 500;
 }
 .colActive{
-    width: 5px;
-    height:5px;
+    width: 4px;
+    height:3px;
     background: green;
 }
 /* col right */

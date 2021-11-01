@@ -13,6 +13,7 @@ import groupFour from '../../../../img/groupFour.jpg';
 import groupFive from '../../../../img/groupFive.jpg';
 import rahat from '../../../../img/rahat.png';
 import shoe from '../../../../img/shoe.jpg';
+import postTwo from '../../../../img/postTwo.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ReactPlayer from 'react-player';
@@ -49,7 +50,7 @@ export default function Features() {
                         </ListGroup>
                         <ListGroup className="mt-2" style={{ borderRadius: '1rem' }} data-aos="fade-up">
                             <ListGroup.Item style={{ border: '0px' }}> <span className={style.colGroup}>Favorites</span></ListGroup.Item>
-                            <ListGroup.Item style={{ border: '0px' }}> <img src={alisa} className={style.colRightImg} alt="" /><span className={style.colLeftText}>Alisa</span> <span className={style.colActive}></span></ListGroup.Item>
+                            <ListGroup.Item style={{ border: '0px' }}> <img src={alisa} className={style.colRightImg} alt="" /><span className={style.colLeftText}>Alisa</span> <span className={style.colActive}>.</span></ListGroup.Item>
                             <ListGroup.Item style={{ border: '0px' }}> <img src={groupOne} className={style.colRightImg} alt="" /><span className={style.colLeftText}>Alex Roy</span> <span className={style.colActive}></span></ListGroup.Item>
                             <ListGroup.Item style={{ border: '0px' }}> <img src={groupTwo} className={style.colRightImg} alt="" /><span className={style.colLeftText}>Jonny Bairstow</span> <span className={style.colActive}></span></ListGroup.Item>
                             <ListGroup.Item style={{ border: '0px' }}> <img src={groupThree} className={style.colRightImg} alt="" /><span className={style.colLeftText}>David warnor</span> <span className={style.colActive}></span></ListGroup.Item>
@@ -83,6 +84,7 @@ export default function Features() {
                                             id={style.form}
 
                                         />
+                                        
                                     </Form>
                                     <div className="d-flex justify-content-center align-items-center" id={style.icons}>
                                         <span className={style.video}><FontAwesomeIcon id={style.upVideo} className={style.icons} icon={faVideo} /></span>
@@ -121,7 +123,37 @@ export default function Features() {
                                 </div>
                             </Card.Body>
                         </Card>
-                        {/* post one*/}
+
+                        {/* post two */}
+                        <Card className="mt-2" style={{ borderRadius: '1rem', boxShadow: 'rgb(0 0 0 / 30%) 0px 3px 0px -1px;' }} data-aos="fade-up">
+                            <div className="container d-flex justify-content-between align-items-center mt-2">
+                                <div className="d-flex">
+                                    <img src={alisa} className={style.userPhoto} alt="" />
+
+                                    <div className="d-block lh-1 text-start justify-content-center align-items-center">
+                                        <h6 className={style.userName}>Alisa jenn</h6>
+                                        <h6 className={style.sponsored}>Sponsored</h6>
+                                    </div>
+
+                                </div>
+                                <div className="edit">
+                                    <FontAwesomeIcon id={style.edit} className={style.icons} icon={faAlignJustify} />
+                                </div>
+                            </div>
+                            <Card.Body>
+                                <Card.Text className={style.caption}>
+                                    Some quick example text to build on the card title and make up the bulk of
+                                    the card's content.
+                                </Card.Text>
+                                <Card.Img variant="top" src={postTwo} />
+                                <div className="d-flex justify-content-between align-items-center mt-3 me-5 ms-5" id={style.cardFotter} style={{cursor:'pointer'}}>
+                                    <span><FontAwesomeIcon id={style.heart} className={style.postReaction} icon={faHeart} /> 167</span>
+                                    <span><FontAwesomeIcon id={style.heart} className={style.postReaction} icon={faComment} /> 10</span>
+                                    <span><FontAwesomeIcon id={style.heart} className={style.postReaction} icon={faShare} /> 3</span>
+                                </div>
+                            </Card.Body>
+                        </Card>
+                        {/* post three*/}
                         <Card className="mt-2" style={{ borderRadius: '1rem', boxShadow: 'rgb(0 0 0 / 30%) 0px 3px 0px -1px;' }} data-aos="fade-up">
                             <div className="container d-flex justify-content-between align-items-center mt-2">
                                 <div className="d-flex">

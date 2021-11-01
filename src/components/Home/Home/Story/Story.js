@@ -10,7 +10,7 @@ export default function Story() {
     return (
         <section className="" id={style.story}>
             <div className="container">
-                <div className="row">
+                <main className="row" style={{height:'100%'}}>
                     <div className="col-3 mt-3">
                         <Card style={{ borderRadius: '1rem', border: 'none', height:'9.4rem' }}>
                             <div className={style.storyImg}>
@@ -138,7 +138,7 @@ export default function Story() {
                             <Button id={style.tryBtn}>Try now</Button>
                         </Card>
                     </div>
-                </div>
+                </main>
             </div>
 
         </section>

@@ -9,6 +9,7 @@ import group from '../../../../img/group.svg';
 import menu from '../../../../img/menu.svg';
 import rahat from '../../../../img/rahat.png';
 import logo from '../../../../img/logo.svg';
+import { Search } from '@material-ui/icons';
 export default function TopNav() {
     return (
 
@@ -26,21 +27,29 @@ export default function TopNav() {
                     >
 
                     </Nav>
-                    <Form className="mx-5 w-80 d-flex justify-content-center" id={style.searchForm}>
+                    <Form className="mx-5 w-80 d-flex justify-content-center align-items-center" id={style.searchForm}>
                         <FormControl
                             type="search"
                             placeholder="Search"
                             className="me-5 rounded-pill"
                             aria-label="Search"
                             id={style.form}
-
                         />
+                        <Search id={style.searchIcon} />
                     </Form>
                     <div className={style.icons}>
                         <div className={style.navIcon}>
-                            <img className={style.navbaricon} src={chat} alt="" />
-                            <img className={style.navbaricon} src={group} alt="" />
-                            <img className={style.navbaricon} src={menu} alt="" />
+                            <div className={style.iconOne}>
+                                <img className={style.navbarChat} src={chat} alt="" />
+                            </div>
+
+                            <div className={style.iconTwo}>
+                                <img className={style.navbarGrp} src={group} alt="" />
+                            </div>
+
+                            <div className={style.iconThree}>
+                                <img className={style.navbarMenu} src={menu} alt="" />
+                            </div>
                         </div>
 
                         <div className={style.profileImg}>
