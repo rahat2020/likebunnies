@@ -2,14 +2,13 @@ import React from 'react'
 import { Container, Form, FormControl, Nav, Navbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import style from './TopNav.module.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faIcons, faSearch } from '@fortawesome/free-solid-svg-icons';
 import chat from '../../../../img/chat.svg';
 import group from '../../../../img/group.svg';
 import menu from '../../../../img/menu.svg';
 import rahat from '../../../../img/rahat.png';
 import logo from '../../../../img/logo.svg';
 import { Search } from '@material-ui/icons';
+
 export default function TopNav() {
     return (
 
@@ -25,7 +24,6 @@ export default function TopNav() {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-
                     </Nav>
                     <Form className="mx-5 w-80 d-flex justify-content-center align-items-center" id={style.searchForm}>
                         <FormControl
@@ -53,7 +51,7 @@ export default function TopNav() {
                         </div>
 
                         <div className={style.profileImg}>
-                            <img src={rahat} id={style.profile} alt="" />
+                            <img src={rahat} id={style.profile}  alt="" />
                         </div>
                     </div>
                 </Navbar.Collapse>
@@ -61,3 +59,4 @@ export default function TopNav() {
         </Navbar>
     )
 }
+

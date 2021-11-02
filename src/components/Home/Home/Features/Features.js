@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Card, Container, Form, FormControl, ListGroup, Nav, Navbar, Button } from 'react-bootstrap';
+import { Card, Container, Form, FormControl, ListGroup, Nav, Navbar } from 'react-bootstrap';
 import style from './Features.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAlignJustify, faCalendarDay, faChevronDown, faComment, faHome, faImages, faUsers, faVideo, faHeart, faShare } from '@fortawesome/free-solid-svg-icons';
@@ -24,7 +24,7 @@ export default function Features() {
     })
     return (
         <section className={style.FeaturesBG}>
-            <div className="container mb-3" variant="white">
+            <div className="container mb-3 w-100" variant="white">
                 <div className="row">
                     <div className="col-md-3">
                         <ListGroup className="text-start" style={{ borderRadius: '1rem' }} data-aos="fade-up">
@@ -66,7 +66,7 @@ export default function Features() {
                                 <Navbar.Brand href="#" style={{ marginRight: '-6rem' }}>
                                     <img src={alisa} className={style.logo} alt="" />
                                 </Navbar.Brand>
-                                <Navbar.Toggle aria-controls="navbarScroll" />
+                                {/* <Navbar.Toggle aria-controls="navbarScroll" /> */}
                                 <Navbar.Collapse id="navbarScroll">
                                     <Nav
                                         className="me-auto my-2 my-lg-0"

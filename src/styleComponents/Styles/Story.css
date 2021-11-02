@@ -1,0 +1,91 @@
+.story-compo{
+    background-color: #eeeff0d7;
+    
+}
+.colRightImg{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    width:25% !important;
+    margin-top: 1rem;
+    height:4.2rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    font-size: 0.85em;
+    text-align: center;
+    color: #1b1b1bc5;
+}
+.ProfileIcons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconsText{
+    margin-left: 0.25em;
+}
+.icons{
+    margin-right: 0.25em;
+    font-size: 1rem;
+}
+#carrot{
+    color:#FF891B;
+}
+#heart{
+    color:#D522D6;
+}
+#star{
+    color: #FFBB00;
+}
+#trophy{
+   color: #FA4AD2; 
+}
+.Text{
+    color: #0000008c;
+    font-size: 0.90em;
+}
+
+/* story img */
+.createStoryImg{
+    width:100%;
+    height:100%;
+}
+.cardImage{
+    width:100%;
+    height:10%;
+}
+
+/* col right */
+.colRight{
+    background-image: linear-gradient(to bottom, #f046cb, #9c2df7);
+    color: #fff;
+}
+.crowns{
+    padding-top: 0.5em;
+    color: #fff;
+    font-size: 2.5rem;
+}
+.btnTry{
+    background-color:#ee14bf;
+    border-radius: 2rem;
+    border: none;
+    padding: 5px 9px 5px 9px;
+    font-size: 0.6rem;
+    color: #fff;
+    display: flex;
+}
+.story{
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 0.25em;
+}
+.image{
+    
+}

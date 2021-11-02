@@ -10,9 +10,9 @@ export default function Story() {
     return (
         <section className="" id={style.story}>
             <div className="container">
-                <main className="row" style={{height:'100%'}}>
-                    <div className="col-3 mt-3">
-                        <Card style={{ borderRadius: '1rem', border: 'none', height:'9.4rem' }}>
+                <main className="row">
+                    <div className="col-3 mt-3" id="colRigth">
+                        <Card style={{ borderRadius: '1rem', border: 'none', height: '9.4rem' }}>
                             <div className={style.storyImg}>
                                 <Card.Img variant="top" src={alisa} id={style.cardImg} />
                             </div>
@@ -21,20 +21,20 @@ export default function Story() {
                                 <Card.Title className={style.title}>Alisa@1234</Card.Title>
                                 <div className={style.icons}>
                                     <span className={style.iconsText}>  <FontAwesomeIcon id={style.carrot} className={style.icons} icon={faCarrot} /><span className={style.Text}>500</span></span>
-                                    <span className={style.iconsText}>  <FontAwesomeIcon id={style.heart} className={style.icons} icon={faHeart} /><span className={style.Text}>258</span></span>
-                                    <span className={style.iconsText}>  <FontAwesomeIcon id={style.star} className={style.icons} icon={faStar} /><span className={style.Text}>583</span></span>
-                                    <span className={style.iconsText}>  <FontAwesomeIcon id={style.trophy} className={style.icons} icon={faTrophy} /><span className={style.Text}>7.5</span></span>
+                                    <span className={style.iconsText}>  <FontAwesomeIcon id={style.carrot} className={style.icons} icon={faHeart} /><span className={style.Text}>258</span></span>
+                                    <span className={style.iconsText}>  <FontAwesomeIcon id={style.carrot} className={style.icons} icon={faStar} /><span className={style.Text}>583</span></span>
+                                    <span className={style.iconsText}>  <FontAwesomeIcon id={style.carrot} className={style.icons} icon={faTrophy} /><span className={style.Text}>7.5</span></span>
                                 </div>
                             </Card.Body>
                         </Card>
                     </div>
 
                     {/* story */}
-                    <div className="col-md-7 d-flex justify-content-around align-items-center mt-3" style={{ height: '9.4rem',}}>
+                    <div className="col-md-7 d-flex justify-content-around align-items-center mt-3" style={{ height: '9.4rem', }}>
                         {/* <div className="col mt-3"> */}
-                        <Card className={style.cardHover} style={{  width: '20rem', borderRadius: '1rem', border: 'none', height:'100%', cursor: 'pointer'}}>
+                        <Card className={style.cardHover} style={{ width: '20rem', borderRadius: '1rem', border: 'none', height: '100%', cursor: 'pointer' }}>
                             <div className={style.createStory}>
-                                <Card.Img className="w-100 h-100" variant="top" src={alisa} id={style.createStoryImg} />
+                                <Card.Img className="w-100 h-100" variant="top" src={alisa} id="createStoryImg" />
                             </div>
                             <div className={style.add}>
                                 <FontAwesomeIcon className={style.plus} icon={faPlus} />
@@ -48,7 +48,7 @@ export default function Story() {
                         {/* two */}
 
                         {/* <div className="col mt-3"> */}
-                        <Card style={{ marginLeft: '1rem', width: '20rem', height: '100%', borderRadius: '2rem', border: 'none', cursor: 'pointer'}}>
+                        <Card style={{ marginLeft: '1rem', width: '20rem', height: '100%', borderRadius: '2rem', border: 'none', cursor: 'pointer' }}>
                             <div className={style.createStory}>
                                 <Card.Img
                                     className="w-100 h-100"
@@ -66,7 +66,7 @@ export default function Story() {
 
                         {/* three */}
                         {/* <div className="col mt-3"> */}
-                        <Card style={{ marginLeft: '1rem', width: '20rem', height: '100%', borderRadius: '2rem', border: 'none' ,cursor: 'pointer' }}>
+                        <Card style={{ marginLeft: '1rem', width: '20rem', height: '100%', borderRadius: '2rem', border: 'none', cursor: 'pointer' }}>
                             <div className={style.createStory}>
                                 <Card.Img
                                     className="w-100 h-100"

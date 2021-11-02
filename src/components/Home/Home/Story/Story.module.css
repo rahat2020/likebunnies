@@ -1,7 +1,7 @@
 #story{
     background-color: #eeeff0d7;
 }
-.storImg{
+.storyImg{
     width:100%;
     height:100%;
     display: flex;
@@ -10,7 +10,7 @@
 }
 #cardImg{
     width:25%;
-    margin-left: 6rem;
+    /* margin-left: 6rem; */
     margin-top: 1rem;
     height:4.2rem;
     border-radius: 100%;
@@ -139,3 +139,10 @@
 .personProfileText{
     color: #fff;
 }
+
+@media only screen and (max-width: 468px) {
+    #colRigth {
+      width: 100%;
+      display: block;
+    }
+  }

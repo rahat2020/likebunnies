@@ -1,14 +1,21 @@
 import React from 'react';
-import Features from './Features/Features';
-import Story from './Story/Story';
+import FeaturesCompo from '../../../styleComponents/FeaturesCompo';
+import StoryCompo from '../../../styleComponents/StoryCompo';
+// import TopnavCompo from '../../../styleComponents/TopnavCompo';
+// import Features from './Features/Features';
+// import Story from './Story/Story';
 import TopNav from './TopNav/TopNav';
 
 export default function Home() {
     return (
-        <div>
+        <>
            <TopNav/>
-           <Story/>
-           <Features/>
-        </div>
+           {/* <Story/>
+           <Features/> */}
+
+           {/* <TopnavCompo/> */}
+           <StoryCompo/>
+           <FeaturesCompo/>
+        </>
     )
 }
