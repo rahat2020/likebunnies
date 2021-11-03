@@ -12,7 +12,7 @@
 .image{
     width:25% !important;
     margin-top: 1rem;
-    height:4.2rem;
+    height:3rem;
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -33,7 +33,7 @@
 }
 .icons{
     margin-right: 0.25em;
-    font-size: 1rem;
+    font-size: 0.60rem;
 }
 #carrot{
     color:#FF891B;
@@ -53,15 +53,75 @@
 }
 
 /* story img */
-.createStoryImg{
-    width:100%;
-    height:100%;
+.story{
+    background-color: #fff;
+    border-radius: 0.70rem;
+    padding: 0.25em;
 }
+.create-story{
+    background-color: #fff;
+    border-radius: 0.70rem;
+    padding: 0.25em;
+}
+.create-img{
+    width: 100%;
+    height: 4.3rem;
+}
+
 .cardImage{
     width:100%;
     height:10%;
 }
-
+.storyImg{
+    width:100%;
+    height:100%;
+    border-radius:0.70rem !important;
+}
+.img{
+    width:100%;
+    height:100%;
+}
+.storyProfile{
+    width:76% !important;
+    margin-top: 3rem;
+    height:2rem;
+    border-radius: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fcfffc;
+    background-image: linear-gradient(to bottom, #000, #fff);
+}
+.profileName{
+    font-size: 0.55em;
+    color: #fff;
+}
+.cardContent{
+    position: absolute;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.add{
+    width: 26px;
+    height: 26px;
+    background-image: linear-gradient(to top, #fa7ddf, #b054fc);
+    padding: 0.5em;
+    position: absolute;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-left: 2.10rem;
+    border-radius: 100%;
+    margin-top: 0.25rem;
+}
+.plus{
+    font-weight: 300;
+    color: #fff;
+}
+.CardMedia{
+    border-radius: 10px;
+}
 /* col right */
 .colRight{
     background-image: linear-gradient(to bottom, #f046cb, #9c2df7);
@@ -81,11 +141,4 @@
     color: #fff;
     display: flex;
 }
-.story{
-    background-color: #fff;
-    border-radius: 1rem;
-    padding: 0.25em;
-}
-.image{
-    
-}
+

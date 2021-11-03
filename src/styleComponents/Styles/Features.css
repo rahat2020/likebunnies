@@ -1,0 +1,151 @@
+.features-compo{
+    background-color: #eeeff0d7;
+}
+.icons{
+    color:#ee14bf ;
+}
+.text{
+    color: #000000bd;
+    font-size: 0.65em !important;
+    font-weight: 500;
+}
+
+#navBg{
+    background-image: linear-gradient(to right,#b054fc, #fa7ddf);
+    border-radius:1rem;
+}
+
+/* write status */
+.writeInput{
+    border: 1px solid #000;
+}
+.logo{
+    width:33%;
+    height:20%;
+   border-radius: 100%;
+   cursor: pointer;
+}
+#searchForm{
+    width: 100%;
+}
+#form{
+    width: 25rem;
+    background-color: #EEF3F7;
+}
+::placeholder{
+    font-size: 0.90rem;
+    font-weight: 600;
+}
+.video{
+    width:40px;
+    height:40px;
+    background: #fff;
+    border-radius:2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fa7ddf;
+    cursor: pointer;
+}
+.gallery{
+    width:40px;
+    height:40px;
+    background: #fff;
+    border-radius:2rem;
+    margin-left: 0.45em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fa7ddf;
+    cursor: pointer;
+}
+
+/* subscriptions */
+.downArrow{
+    color: #000000cc;
+}
+
+/* features col right  */
+
+#cardHot{
+    color: #fa7ddf;
+    font-size: 1.2rem;
+}
+.not{
+    font-size: 0.75em;
+    margin-right: 0.55em;
+    font-weight: 550;
+}
+.newbtn{
+    background: #fa7ddf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    font-size: 0.56em;
+    padding: 0px 4px;
+}
+.btnNew{
+    padding: 0px 3px;
+    color: #fff;
+    font-size: 1em !important;
+    font-weight: 550;
+}
+
+/* hot or not */
+.colRightCircle{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #fa7ddf;
+    border-radius: 1rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7em;
+    margin-top: -2rem;
+    margin-left: 3.2rem;
+}
+.name{
+    /* width: 58%; */
+    position: absolute;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -3.9rem;
+    color: #fff;
+}
+.cardClick{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.90em;
+    margin-top: 0.40em;
+    color: #fa7ddf;
+    font-weight: 500;
+}
+
+
+/* post of users */
+
+.userPhoto{
+    width: 25%;
+    height: 20%;
+    border-radius: 100%;
+
+}
+.userName{
+    font-size: 1em;
+    margin-left: 0.25em;
+    color: #7e7e7ee7;
+    font-weight: 400;
+}
+.sponsored{
+    font-size: 0.70em;
+    margin-left: 0.45em;
+    margin-top: -0.25em;
+    color: #fa7ddf;
+}
