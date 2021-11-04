@@ -7,15 +7,25 @@ import VideocamIcon from '@material-ui/icons/Videocam';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import ModeCommentOutlinedIcon from '@mui/icons-material/ModeCommentOutlined';
 import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
+import makeStyles from '@mui/styles/makeStyles';
 import postOne from '../img/postOne.jpg'
 import postThree from '../img/postThree.jpg'
 import postTwo from '../img/postTwo.jpg'
 import alisa from '../img/alisa.png';
 
+
+const useStyles = makeStyles(theme => ({
+    textField:{
+        border: '1px solid #000'
+    }
+}))
 export default function ColCenter() {
+
+    const classes = useStyles()
+
     return (
         <section>
-            <Navbar id="navBg" expand="lg">
+            <Navbar id="statusBg" expand="lg">
                 <Container>
                     <Navbar.Brand href="#" style={{ marginRight: '-6rem' }}>
                         <img src={alisa} className="logo" alt="" />
@@ -29,7 +39,7 @@ export default function ColCenter() {
                         >
 
                         </Nav>
-                        <Form className="mx-5 w-100 d-flex justify-content-center" id="searchForm">
+                        <Form className="mx-5 w-100 d-flex justify-content-center" id="StatusForm">
                             {/* <FormControl
                                             type="search"
                                             placeholder="Write something here"
@@ -38,11 +48,11 @@ export default function ColCenter() {
                                             id="form"
 
                                         /> */}
-                            <TextField className="writeInput" fullWidth label="fullWidth" id="fullWidth" />
+                            <TextField className={classes.textField}  fullWidth label="write something here"  id="fullWidth" />
                         </Form>
                         <div className="d-flex justify-content-center align-items-center" id="icons">
-                            <span className="video"> <VideocamIcon id="upVideo" className="icons" /></span>
-                            <span className="gallery"><PermMediaIcon id="gallery" className="icons" /></span>
+                            <span className="video"> <VideocamIcon id="upVideo" className="StatusIcons" /></span>
+                            <span className="gallery"><PermMediaIcon id="gallery" className="StatusIcons" /></span>
                         </div>
                     </Navbar.Collapse>
                 </Container>
@@ -73,7 +83,8 @@ export default function ColCenter() {
                 />
                 <CardContent>
                     <Typography>
-                        <div className="d-flex justify-content-between align-items-center mt-3 me-5 ms-5" id="cardFotter" style={{ cursor: 'pointer' }}>
+                        <div className="d-flex justify-content-between align-items-center mt-3 me-5 ms-5" 
+                        id="cardFotter" style={{ cursor: 'pointer' }}>
                             <span><FavoriteBorderOutlinedIcon className="postReaction" /> 167</span>
                             <span><ModeCommentOutlinedIcon className="postReaction" /> 10</span>
                             <span><ShareOutlinedIcon className="postReaction" /> 3</span>

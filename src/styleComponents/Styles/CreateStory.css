@@ -1,0 +1,56 @@
+.settings{
+    font-size: 1.4re;
+    color: #fff;
+}
+.create{
+    color: #fff;
+    font-size: 2em !important;
+}
+.createLeft{
+    border-right: 1px solid #a5a2a2be;
+    border-bottom:  1px solid #a5a2a2be;
+
+}
+
+.colstoryRight{
+    background-color: #242526;
+    height: 100vh;
+}
+.createRight{
+    background-color: #18191A;
+}
+.createPhoto{
+    background-image: linear-gradient(to bottom, #777DEB, #8BC1F9);
+    background-position: center;
+    height: 50vh;
+    background-size: contain;
+    transition: all 0.5s ease;
+}
+.createPhoto:hover{
+    translate: scale(1.1);
+}
+.createText{
+    background-image: linear-gradient(to bottom, #BA5ED1, #D368B9);
+    background-position: center;
+    height: 50vh;
+    background-size: contain;
+}
+.createIcon{
+    width:40px;
+    height:40px;
+    background: #000000c5;
+    border-radius:2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fafafa;
+    cursor: pointer;
+    border:  1px solid #fcf9f9c5;
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+.storyCard{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}

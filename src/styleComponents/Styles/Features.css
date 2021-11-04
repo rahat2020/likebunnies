@@ -10,9 +10,10 @@
     font-weight: 500;
 }
 
-#navBg{
-    background-image: linear-gradient(to right,#b054fc, #fa7ddf);
-    border-radius:1rem;
+#statusBg{
+    background-image: linear-gradient(to right, #a63efa, #fc45d4 ) ;
+    border-radius: 1rem;
+    color: #fff;
 }
 
 /* write status */
@@ -28,10 +29,7 @@
 #searchForm{
     width: 100%;
 }
-#form{
-    width: 25rem;
-    background-color: #EEF3F7;
-}
+
 ::placeholder{
     font-size: 0.90rem;
     font-weight: 600;
@@ -44,7 +42,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fa7ddf;
+    color: #ff33d3;
     cursor: pointer;
 }
 .gallery{
@@ -56,7 +54,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fa7ddf;
+    color: #ff33d3;
     cursor: pointer;
 }
 

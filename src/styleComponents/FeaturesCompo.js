@@ -1,5 +1,4 @@
-
-import { Avatar, CardContent, CardMedia, FormControl, List, ListItem, ListItemAvatar, ListItemText, TextField, Typography } from '@material-ui/core';
+import { Avatar, List, ListItem, ListItemAvatar, ListItemText, TextField, Typography } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
 import alisa from '../img/alisa.png';
 import './Styles/Features.css';
@@ -31,7 +30,7 @@ export default function FeaturesCompo() {
         <section className="features-compo" style={{ marginTop: '-2.5em' }}>
             <div className="container">
                 <div className="row">
-                    <div className="col-md-2 mb-3">
+                    <div className="col-md-3 mb-3">
 
                         <List style={{ borderRadius: '1rem', backgroundColor: 'white' }} >
                             <ListItem>
@@ -163,7 +162,7 @@ export default function FeaturesCompo() {
                     </div>
 
                     {/* col center */}
-                    <div className="col-md-8">
+                    <div className="col-md-7">
                         <ColCenter />
                     </div>
 
