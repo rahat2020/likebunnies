@@ -8,14 +8,15 @@ import menu from '../img/menu.svg';
 import rahat from '../img/rahat.png';
 import logo from '../img/logo.svg';
 import { Search } from '@material-ui/icons';
+import { Link } from 'react-router-dom';
 
 export default function TopnavCompo() {
     return (
 
         <Navbar id="navBg" expand="lg">
             <Container>
-                <Navbar.Brand href="#">
-                    <img src={logo} className="likebunnie" alt="" />
+                <Navbar.Brand>
+                    <Link to="/"> <img src={logo} className="likebunnie" alt="" /></Link>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
@@ -51,7 +52,7 @@ export default function TopnavCompo() {
                         </div>
 
                         <div className="profileImg">
-                            <img src={rahat} id="profile"  alt="" />
+                            <img src={rahat} id="profile" alt="" />
                         </div>
                     </div>
                 </Navbar.Collapse>

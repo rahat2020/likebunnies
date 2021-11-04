@@ -85,10 +85,7 @@ export default function StoryCompo() {
 
                             {
                                 picture?.slice(0, 5).map((pictures) => (
-
-
                                     <div className="col story">
-
                                         <Card style={{ borderRadius: '1rem', width: '5.6rem' }}>
                                             <CardMedia
                                                 className="storyImg"
@@ -121,9 +118,12 @@ export default function StoryCompo() {
 
 
                         </div>
-                        <span>
-                            <ArrowRightAltIcon className="rightArrow" />
-                        </span>
+                        <Link to="all-story">
+                            <span className="arrow">
+                                <ArrowRightAltIcon className="rightArrow" />
+                            </span>
+                        </Link>
+
 
                     </div>
                     <div className="col-2 mt-3" id="colright">

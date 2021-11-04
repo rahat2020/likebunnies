@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Home from './components/Home/Home/Home';
 import CreateStory from './styleComponents/CreateStory';
+import Allstroy from './styleComponents/Allstroy';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
           </Route>
           <Route exact path="/create-story">
             <CreateStory />
+          </Route>
+          <Route exact path="/all-story">
+            <Allstroy />
           </Route>
         </Switch>
       </Router>

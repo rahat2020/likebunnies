@@ -34,6 +34,7 @@
 .Cardicons{
     margin-right: 0.25em;
     font-size: 0.90rem;
+    display: flex;
 }
 .FontIcons{
     margin-right: 0.25em;
@@ -111,6 +112,25 @@
     /* background-image: linear-gradient(to bottom, #000, #fff); */
 }
 
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: 33rem;
+    width:2rem;
+    height:2rem;
+    margin-top: -5rem;
+    background-color: #fa7ddf;
+    border-radius: 0.65em;
+    cursor: pointer;
+    
+
+}
+.rightArrow{
+    color: #fdfdfd;
+    font-size: 5rem;
+}
 
 .add{
     width: 26px;
@@ -156,6 +176,9 @@
 /* media query */
 
 @media only screen and (max-width: 468px) {
+    .arrow{
+        display: none;
+    }
     .image{
         width:15% !important;
         margin-top: 1rem;
@@ -189,6 +212,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 4em;
     }
   
     #form{
